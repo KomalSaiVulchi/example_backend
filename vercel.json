@@ -3,12 +3,6 @@
   "builds": [
     { "src": "index.js", "use": "@vercel/node" }
   ],
-  "functions": {
-    "index.js": {
-      "runtime": "nodejs18.x",
-      "memory": 1024
-    }
-  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.js" }
   ]
